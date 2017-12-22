@@ -14,7 +14,9 @@
         font-size: 70px; }
     .jumbotron .face {
       width: 300px !important;
-      height: 300px !important; } }
+      height: 300px !important; }
+  .skill {
+    margin: 0 !important; } }
 
 @media (max-width: 510px) {
   .jumbotron {
@@ -36,6 +38,15 @@
     width: auto !important;
     margin: 0 12px !important;
     font-size: 1em !important; } }
+
+@media (max-width: 670px) {
+  .skills {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+    -ms-flex-direction: column !important;
+    flex-direction: column !important;
+    -ms-flex-wrap: nowrap !important;
+    flex-wrap: nowrap !important; } }
 
 @media (max-width: 314px) {
   h2 {
@@ -155,7 +166,9 @@ p {
       color: #8b9aa6; }
     .skills-container .skills .skill {
       padding: 20px 10px 5px 10px;
-      width: 100%;
+      -webkit-box-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
       margin: 20px 30px;
       border-radius: 9%;
       color: #8b9aa6; }
