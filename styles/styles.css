@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Cardo|Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Lato|Montserrat:400,500,600,700");
 @media (max-width: 939px) {
   .jumbotron {
     -webkit-box-orient: vertical;
@@ -81,9 +81,7 @@ body {
 h1 {
   font-size: 85px;
   margin-bottom: 0;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 800;
+  font-weight: 500;
   letter-spacing: normal;
   line-height: 80px;
   text-transform: uppercase; }
