@@ -10,8 +10,10 @@
     .jumbotron .presentation {
       text-align: center;
       width: 600px !important; }
-      .jumbotron .presentation h1 {
+      .jumbotron .presentation h1 #autotype {
         font-size: 70px; }
+        .jumbotron .presentation h1 #autotype::after {
+          margin-bottom: -3px !important; }
     .jumbotron .face {
       width: 300px !important;
       height: 300px !important; }
@@ -31,6 +33,8 @@
       .jumbotron .presentation h1 {
         font-size: 50px;
         line-height: 50px; }
+        .jumbotron .presentation h1::after {
+          margin-bottom: -3px !important; }
     .jumbotron .face {
       width: 240px !important;
       height: 240px !important; }
@@ -60,7 +64,7 @@
     flex-wrap: nowrap; }
     .jumbotron .presentation {
       text-align: center; }
-      .jumbotron .presentation h1 {
+      .jumbotron .presentation h1 #autotype {
         font-size: 50px;
         line-height: 50px; }
     .jumbotron .face {
@@ -135,6 +139,26 @@ p {
   .jumbotron .presentation {
     overflow: auto;
     width: 470px; }
+
+#autotype::after {
+  content: '';
+  -webkit-animation: blink 0.5s linear infinite alternate;
+  animation: blink 0.5s linear infinite alternate;
+  opacity: 0;
+  display: inline-block;
+  width: 4px;
+  height: 0.8em;
+  margin-bottom: -5px;
+  vertical-align: center !important;
+  background: white; }
+
+@-webkit-keyframes blink {
+  100% {
+    opacity: 1; } }
+
+@keyframes blink {
+  100% {
+    opacity: 1; } }
 
 .skills-container {
   background: white;
